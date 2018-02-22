@@ -1,0 +1,21 @@
+Used Spotlight to Open Terminal
+I used ls immediately to see where I was
+Cd desktop
+Mkdir test
+Cd test
+Touch index.html
+Touch style.css
+Touch commands.txt
+Mv index.html index_2.html
+Rm style.css
+Cd..
+Mkdir destination
+Cd test
+Mv index_2.html ../destination
+Ls
+cd..
+Cd destination
+Ls
+Cd..
+Rm -rf destination
+
