@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -8,22 +8,80 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1>Jayne Doe</h1><h2>Master of Shadows and the Internet</h2>
+        <h1>Jayne Doe</h1>
+        <h3>Master of Shadows and the Internet!</h3>
       </div>
       <div id="content">
-        <div class="selfie"></div>
-        <div class="about me">
-          <div class="smalltitle">
-          </div>
-          <p>Hello! I'm an extremely driven and creative Full Stack Developer who is currently open for career opportunities as a front-end or back-end web developer in the Greater Seattle Area.<br> I'm a recent graduate of Coding Dojo, a coding school located in Bellevue, WA that teaches 3 full stacks in 3 months.  I'm capabble of learning new technologies very quickly and am always looking for opportunities to further expand my skills and grow as a Developer.<br>
-          <a href="" >Continue reading...</a></p>
+        <img class="selfie" src="./Portfolio_images/photo_of_me.jpg" width="380px"
+          height="250px" alt="selfie"/>
+        <div class="aboutme">
+          <h3> About...</h3>
+          <p>Hello! I'm an extremely driven and creative Full Stack Developer who is currently open for career opportunities as a front-end or back-end web developer in the Greater Seattle Area.
+          </p>
+          <p>I'm a recent graduate of Coding Dojo, a coding school located in Bellevue, WA that teaches 3 full stacks in 3 months.  I'm capabble of learning new technologies very quickly and am always looking for opportunities to further expand my skills and grow as a Developer.
+          </p>
+          <a href="" >Continue reading...</a>
         </div>
-        <div class="smalltitle lamode column technology"></div>
-        <div class="smalltitle family column technology"></div>
-        <div class="smalltitle fiveEleven column technolgy"></div>
+        <div class="lamode column">
+          <h3>La Mode</h3>
+          <img src="./Portfolio_images/lamode.png" width="275" height="140px" alt=""/>
+          <p>La Mode is an Ecommerce website for designed to market various clothing products. Users are able to view the available garments, select their desired quantitiy, and compile a shopping cart for making a final purchase.</p>
+          <h4>Technologies:</h4>
+          <div class="icon">
+            <img src="./Portfolio_images/php.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/codeigniter.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/jQuery.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/ajax.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/mysql.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/HTML.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/css.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/bootstrap.png" width="35px" height="35px" alt=""/>
+          </div>
+          <button class="button" type="button">La Mode</button>
+        </div>
+        <div class="family column">
+          <h3>Family Contacts</h3>
+          <img src="./Portfolio_images/familycontacts.png" height="140px" width="275px" alt=""/>
+          <p>Family Contacts is a free application for managing, sharing, and visualizing your family relationships for both extended and immediate family.  As an essential feature of the project, your log-in information determines who you can see and reveals how people are related to you.</p>
+          <h4>Technologies:</h4>
+          <div class=icon>
+            <img src="./Portfolio_images/JavaScript.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/mongodb.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/expressjs.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/angular.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/nodejs.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/HTML.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/css.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/socket.png" width="35px" height="35px" alt=""/>
+          </div>
+          <button class="button" type="button">Family Contacts</button>
+        </div>
+        <div class="fiveEleven column">
+          <h3>fiveEleven</h3>
+          <img src="./Portfolio_images/fiveEleven.png" height="140px" width="275px" alt=""/>
+          <p>Five Eleven is a data visualization project built on the Python software stack.  The application transforms the developer job-hunt into a more visual, user friendly experience.  Based on location, technology popularity, and other vast data sets, users may easily visualize the varying sizes and concentrations of the junior developer job market across the nation.</p>
+          <h4>Technologies:</h4>
+          <div class="icon">
+            <img src="./Portfolio_images/python.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/django.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/d3.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/angular.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/sqlite.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/HTML.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/css.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/JavaScript.png" width="35px" height="35px" alt=""/>
+            <img src="./Portfolio_images/materialize.png" width="35px" height="35px" alt=""/>
+          </div>
+          <button class="button" type="button">fiveEleven</button>
+        </div>
       </div>
       <div id="footer">
         <p>jdoe@gmails.com | 206-555-1212</p>
+          <img src="./Portfolio_images/github.png" width="17px" height="17px" alt=""/><a href="">jaynedev</a>
+          <img src="./Portfolio_images/linkedin.png" width="17px" height="17px" alt=""/><a href="">jayne-doe</a>
+          <img src="./Portfolio_images/twitter.png" width="17px" height="17px" alt=""/><a href="" >jdtweets</a>
+          <img src="./Portfolio_images/codepen.png" width="17px" height="17px" alt=""/><a href="" >jaynedev</a>
+        </p>
       </div>
     </div>
   </body>
