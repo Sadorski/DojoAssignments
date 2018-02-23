@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#container {
+  width: 920px;
+  height: 1000px;
+}
+#header {
+  width: 920px;
+  background-color: #F8F8F8;
+}
+#content {
+  width: 920px;
+  height: 1000px;
+  background-color: #705963;
+
+}
+h1 {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+h2 {
+  float: right;
+  display: inline-block;
+}

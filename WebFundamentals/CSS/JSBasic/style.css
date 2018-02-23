@@ -1,0 +1,81 @@
+/* Inserting a Reset... I dont know why */
+/* * {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	} */
+
+  #wrapper {
+    width: 970px;
+    /* height: 535px; */
+    background-color: #13365B;
+    padding: 5px;
+  }
+  #header {
+    width: 920px;
+    height: 60px;
+    background-color: red;
+    border-radius: 15px;
+    margin:5px;
+    padding-right:25px;
+  }
+  #navigation {
+    width: 165px;
+    background-color: #2a7d8c;
+    display: inline-block;
+    border-radius: 15px;
+    vertical-align: top;
+    margin: 10px;
+    padding-right: 6px;
+  }
+  #main_content {
+    width: 720px;
+
+    background-color: #0e1822;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+    margin: 10px;
+    padding-right: 20px;
+
+  }
+  #footer {
+    width: 900px;
+    background-color: #5d6572;
+    border-radius: 15px;
+    padding: 1px;
+    padding-right: 55px;
+    margin:5px;
+  }
+  .white {
+    color: white;
+  }
+  .linkcolor,
+  a {
+    color: #41C2C0;
+  }
+  h1 {
+    padding: 12px 12px;
+  }
+  h2 {
+    padding-left: 20px;
+  }
+  .keyword {
+    color: #5B71C8;
+  }
+
+#navigation p{
+  margin-top: 0;
+  margin-bottom:0;
+  padding-left: 20px;
+  padding-top:20px;
+}
+#navigation ul{
+  margin-top: 0;
+}
