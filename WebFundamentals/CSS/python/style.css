@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  width: 970px;
+  background-color: rgb(28,62,99);
+}
+.header {
+  display: inline-block;
+  vertical-align: top;
+  width: 970px;
+  height: 100px;
+  /* background-color: cyan; */
+}
+.header a {
+  color: rgb(220, 182, 51);
+}
+.topnav a {
+  margin-top: 10px;
+  padding: 10px;
+  text-decoration:none;
+}
+.topnav {
+  display: inline-block;
+  vertical-align: top;
+  width: 810px;
+  margin-left: 80px;
+  margin-right: 30px;
+  background-color: rgb(48,101,157);
+  border-radius: 7px;
+  font-family: arial, serif;
+  font-size:18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px black solid;
+  border-top: 0px;
+  border-left: 0px;
+  padding-right: 30px;
+
+}
+.topnav a{
+  padding-left: 44px;
+}
+.whitebg {
+  width: 970px;
+  height: 210px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.sidenav {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 25px;
+  padding-right:20px;
+  width: 175px;
+  height: 215px;
+  margin-left: 110px;
+  margin-top: 30px;
+  /* background-color: purple; */
+}
+.history {
+ width: 605px;
+ display: inline-block;
+ vertical-align: top;
+ margin-top: 25px;
+ font-size: 14px;
+ text-align:center;
+ /* background-color: green; */
+}
+.header p {
+  display:inline-block;
+  vertical-align: top;
+  text-align:right;
+  font-size: 12px;
+  color:white;
+  padding-left: 385px;
+}
+.search {
+  display: inline-block;
+  vertical-align:top;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.search form {
+  /* padding-left: 355px; */
+   display: inline-block;
+  text-align: right;
+  margin-left: 276px;
+  /* border: 10px rgb(49,55,60) solid;
+  border-radius:5px;
+  border-left-width:35px;
+  border-right-width: 35px; */
+}
+.search input {
+  width: 145px;
+  height: 35px;
+}
+
+.searchbar {
+  border: 10px rgb(49,55,60) solid;
+  border-radius:5px;
+  border-left-width:35px;
+  border-right-width: 35px;
+  height: auto;
+  background-color: rgb(49,55,60);
+    }
+
+.button {
+  /* display: inline-block; */
+  background-color: #286299;
+  /* margin-left: 5px; */
+  height: 25px;
+  width: 35px;
+  border-radius: 5px;
+  /* border: 10px rgb(49,55,60) solid;
+  border-left-width:5px;
+  border-right-width: 35px; */
+}
+
+.history,
+.sidenav a,
+.button,
+.topnav a,
+.white {
+  color: white;
+}
+
+.whitebg p,
+.whitebg h4 {
+  color: black;
+}
+.sidenav a {
+  color: white;
+  line-height: 1.6em;
+}
+.getstart {
+  /* background-color:gray; */
+  width: 380px;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 3px rgb(90,146,202) solid;
+  margin:10px;
+  margin-top: 6px;
+  padding-top: 3px;
+
+}
+.getstart p,
+.app p,
+.app li,
+.getstart li {
+  font-size: 14px
+}
+.app li,
+.getstart li{
+  list-style: square;
+  text-decoration-color;
+}
+.app a,
+.getstart a {
+  text-decoration: none;
+  color: rgb(113, 160, 207)
+}
+.sidenav ul{
+  list-style: circle;
+  color: rgb(220, 182, 51);
+  text-align: center;
+  list-style-position: inside;
+}
+.getstart ul{
+  padding-left:100px;
+  padding-right:60px;
+
+}
+.app ul {
+  padding-left:100px;
+  padding-right:50px;
+}
+.poem {
+  display:inline-block;
+  color: rgb(220, 182, 51);
+}
+.poem p {
+  font-style:italic;
+  font-size: 16px;
+  text-align: center;
+  font-family: verdana, sans-serif;
+  line-height: 1.5em;
+}
+.getstart p,
+.app p,
+.app h4,
+.getstart h4{
+  text-align:center;
+}
+
+.app {
+  /* background-color:gray; */
+  width: 380px;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 3px rgb(90,146,202) solid;
+  margin:10px;
+  margin-top: 6px;
+  padding-top: 3px;
+}
+.footer {
+  width: 920px;
+  padding-top: 50px;
+  line-height: 1.8em;
+  color: white;
+  text-align: center;
+  /* background-color:purple; */
+}
+.footer li{
+  display: inline;
+  padding:18px;
+}
+.footer a{
+  text-decoration:none;
+  color: white;
+  font-weight: normal;
+}
+.footer p {
+  font-size: 10px;
+}
+.header img {
+  padding-top:10px;
+  padding-left:25px;
+  height: 85px;
+  width: 340px;
+}
+.history.white{
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1em;
+}
+.last.white {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2em;
+}
