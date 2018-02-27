@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>haztime</title>
+  <script>
+  function haveTime(HOUR, MINUTE, PERIOD) {
+    if ((MINUTE > 30) && (PERIOD == "AM")) {
+      console.log("It's almost",HOUR + 1,"in the morning");
+    } else if ((MINUTE > 30) && (PERIOD == "PM")) {
+      console.log("It's almost",HOUR + 1,"in the evening");
+    } else if ((MINUTE < 30) && (PERIOD == "AM")){
+      console.log("It's just after",HOUR,"in the morning");
+    } else if ((MINUTE < 30) && (PERIOD == "PM")) {
+      console.log("It's just after",HOUR,"in the morning");
+    } else if (PERIOD == "AM") {
+      console.log("It is currently half past ",HOUR,"in the morning");
+    } else {
+      console.log("It is currently half past ",HOUR,"in the afternoon");
+    }
+  }
+  </script>
+</head>
+<body>
+</body>
+</html>

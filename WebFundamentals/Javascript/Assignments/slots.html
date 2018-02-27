@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Slots Slots Slots!!!</title>
+  <script>
+  //1 in 100 chance to win game
+  //you will win anywhere between 50-100 quarters
+  //return num of quarters remaining and winning quarters
+  //return 0 if all quarters are wasted
+    function slots(quarters) {
+      var winningNumber = 42
+      var rewards = Math.floor(Math.random() * 50) + 51
+      var roll = Math.floor(Math.random() * 100)
+      while (quarters >= 0) {
+        // console.log(roll);
+        // console.log(quarters);
+        if (roll == winningNumber) {
+          return(quarters + rewards);
+        } else if (quarters == 0) {
+          return 0
+        } else {
+          roll = Math.floor(Math.random() * 100);
+        } quarters -= 1;
+      }
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
