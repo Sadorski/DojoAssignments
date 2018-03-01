@@ -16,7 +16,13 @@
         // console.log(roll);
         // console.log(quarters);
         if (roll == winningNumber) {
-          return(quarters + rewards);
+          var keepGoing = prompt(`Congratulations, you've won ${rewards} credits and have ${quarters} credits remaining, would you like to continue?`).toLowerCase()
+          if (keepGoing === "no") {
+            return (quarters + rewards);
+          } else if (keepGoing === "yes") {
+            quarters = (quarters + rewards);
+            slots(quarters);
+          }
         } else if (quarters == 0) {
           return 0
         } else {

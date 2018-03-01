@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja To Cat</title>
+    <link rel="spreadsheet" type="text/css" href="style.css">
+    <style>
+      img {
+        display:block;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.head').click(function() {
+          if($(".head").attr("src") == "./images/cat0.png") {
+            $(".head").attr("src", "./images/ninja0.png");
+          } else { $(".head").attr("src","./images/cat0.png")}
+        })
+        $('.shoulder').click(function() {
+          if($(".shoulder").attr("src") == "./images/cat1.png") {
+            $(".shoulder").attr("src", "./images/ninja1.png");
+          } else { $(".shoulder").attr("src","./images/cat1.png")}
+        })
+        $('.mid').click(function() {
+          if($(".mid").attr("src") == "./images/cat2.png") {
+            $(".mid").attr("src", "./images/ninja2.png");
+          } else { $(".mid").attr("src","./images/cat2.png")}
+        })
+        $('.knees').click(function() {
+          if($(".knees").attr("src") == "./images/cat3.png") {
+            $(".knees").attr("src", "./images/ninja3.png");
+          } else { $(".knees").attr("src","./images/cat3.png")}
+        })
+        $('.toes').click(function() {
+          if($(".toes").attr("src") == "./images/cat4.png") {
+            $(".toes").attr("src", "./images/ninja4.png");
+          } else { $(".toes").attr("src","./images/cat4.png")}
+        })
+      })
+
+    </script>
+  </head>
+  <body>
+    <img class="head" src="./images/cat0.png" data-alt-src="./images/ninja0.png"/>
+    <img class="shoulder" src="./images/cat1.png" data-alt-src="./images/ninja1.png"/>
+    <img class="mid" src="./images/ninja2.png" data-alt-src="./images/cat0.png"/>
+    <img class="knees" src="./images/ninja3.png" data-alt-src="./images/cat0.png"/>
+    <img class="toes" src="./images/ninja4.png" data-alt-src="./images/cat0.png"/>
+
+  </body>
+</html>

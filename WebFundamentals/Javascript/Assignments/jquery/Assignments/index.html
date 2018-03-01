@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jquery</title>
+  <style>
+    div {
+      border: 3px black solid;
+      margin: 25px;
+      padding: 25px
+    }
+    .blue {
+      color:blue;
+    }
+    .red {
+      color:red
+    }
+  </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    console.log($)
+    console.log($())
+    $(document).ready(function(){
+      $('border').hover(function(){
+        $('p').hide()
+      });
+      $('button').hover(function(){
+        $('p').show()
+      });
+      $('p').toggle(function(){
+        $('img').toggle()
+
+      });
+      $('.add').click(function(){
+        $('p').attr('.blue .red');
+      });
+      $('h1').html(function(){
+
+      });
+      $('p').click(function(){
+
+      });
+      $('.append').before(function(){
+        $('p').append("appended")
+
+      });
+      $('a').click(function(){
+        $('img').slideToggle()
+      })
+      $('.b').click(function(){
+        $('p').slideDown()
+      });
+      $('.c').click(function(){
+        $('img').slideUp()
+      });
+      $('.d').click(function(){
+        $('img').slideDown()
+      });
+      $('.e').click(function(){
+        $('p').text("erase everything")
+      });
+      $('.f').click(function(){
+        $('p').html("<b>Ignore Everything</b>")
+      });
+      $('.g').click(function(){
+        $('p').val()
+      });
+      $('.h').click(function(){
+        $('p').data()
+      });
+      $('.i').click(function(){
+        $('p').before('after')
+      });
+      $('.j').click(function(){
+        $('p').after('before')
+      });
+
+
+      // $('.add').
+
+    });
+  </script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>AddClass</h1>
+      <button class="add" type="button">AddClass</button>
+      <p class="blue">Click the button to add class 'red' to this paragraph</p>
+    </div>
+    <div class="content">
+      <h2>Slidetoggle</h2>
+      <a class="trust" href="#">Slidetoggle</a>
+      <img src="https://i.imgur.com/oJq1IUv.png" />
+      <p>Click the button to slidetoggle a hidden image</p>
+    </div>
+    <div class="footer">
+      <h3>APPEND</h3>
+      <button class="append" type="button">Append</button>
+      <p>Click the button to append a new paragraph</p>
+    </div>
+    <div class=random>
+      <button class="b" type="button">ATTR</button>
+      <button class="c" type="button">Slide Up</button>
+      <button class="d" type="button">Slide Down</button>
+      <button class="e" type="button">text</button>
+      <button class="f" type="button">html</button>
+      <button class="g" type="button">val</button>
+      <button class="h" type="button">data</button>
+      <button class="i" type="button">before</button>
+      <button class="j" type="button">after</button>
+      <p> Before and after</p>
+    </div>
+  </div>
+</body>
+</html>

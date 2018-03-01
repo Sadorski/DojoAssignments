@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="spreadsheet" type="text/css" href="style.css">
+    <style>
+      *{
+        margin:0px;
+        padding:0px;
+      }
+      h1 {
+        border: 2px gray solid;
+        border-top-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        margin-top:50px;
+        margin-bottom:20px;
+      }
+
+      table {
+        border: 1px black solid;
+        margin-left: 25px;
+      }
+      div {
+        margin-left: 25px;
+        width:300px;
+      }
+      form {
+        text-align:right;
+      }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('button').click(function(){
+          alert("you have clicked a button")
+          var fn = $('.first').val()
+          var ln = $('.last').val()
+          var email = $('.email').val()
+          var phone = $('.phone').val()
+          $('table').children().append(`<tr><td>${fn}</td><td>${ln}</td><td>${email}</td><td>${phone}</td></tr>`)
+
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>Contact #</th>
+      </tr>
+    </table>
+    <div id="form1">
+      <h1>Add User</h1>
+      <form>
+        <label for="first_name">First Name</label>
+        <input class="first" type="text" name="firstname"></br>
+        <label for="last_name">Last Name</label>
+        <input class="last" type="text" name="lastname"></br>
+        <label for="email_address">Email Address</label>
+        <input class="email" type="text" name="emailaddress"></br>
+        <label for="phone_num">Phone #</label>
+        <input class="phone" type="text" name="contact_num"></br>
+        <button type="button">Add User</button>
+      </form>
+
+  </body>
+</html>
