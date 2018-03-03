@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="spreadsheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        function kelvintoF(k){
+        answer = ((k-273.15)*1.8)+32
+        return answer.toFixed(2)
+        }
+        var key = '57e996fff8e7704208010f5302685373'
+        var ending= ',us&&appid='
+        $('#submit').click(function(){
+          var city = $('#city').val()
+          console.log(city)
+          $.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}${ending}${key}`, function(res) {
+            console.log(res)
+          $('#info').children('h1').append(`${res.name}`)
+          console.log(res.main.temp)
+          console.log(kelvintoF(280))
+          $('#info').children('p').append(`${kelvintoF(res.main.temp)}`)
+
+
+
+
+        }, 'json');
+      })
+        return false;
+      })
+    </script>
+  </head>
+  <body>
+    <div id="form">
+      <label for="City in United States">Location:</label>
+      <input id ="city" type="text" name="text">
+      <input id ="submit" type="submit" value="Search Weather">
+    </div>
+    <div id=info>
+      <h1></h1>
+      <p>Temperature:</p>
+    </div>
+
+  </body>
+</html>

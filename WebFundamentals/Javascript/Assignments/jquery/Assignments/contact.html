@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <style>
+      *{
+        margin:0px;
+        padding:0px;
+      }
+      div {
+        display:inline-block;
+        vertical-align: top;
+      }
+      div.new {
+        display:block;
+        height:175px;
+        text-align:center;
+        width:300px;
+        border: 2px black solid;
+        margin: 10px;
+        padding:10px;
+      }
+      #hidden{
+        /* height:175px;
+        text-align:center;
+        width:300px;
+        border: 2px black solid;
+        margin: 10px;
+        padding:10px; */
+        display:none;
+      }
+      p.hide {
+        display:none;
+
+      }
+      p.show{
+        display:inline;
+      }
+
+      h3 {
+        padding-bottom:70px;
+        padding-top:25px;
+      }
+    </style>
+    <link rel="spreadsheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        var i = 0
+        var count = 0
+        $(document).on('click','button',function(){
+          var $first = $('.first').val()
+          var $last = $('.last').val()
+          var $desc = $('textarea').val()
+          $('#right_side').append(`<div class="new"><h3>${$first} ${$last}</h3><p id="hidden">${$desc}</p><h6> Click for description!</h6></div>`)
+          .css('div.new')
+
+
+
+          console.log($first)
+          console.log($last)
+          console.log($desc)
+          $('form').children().val('')
+        })
+        $(document).on('click', 'div.new', function(){
+
+          if (count % 2 === 0) {
+            count += 1
+          console.log(count)
+          $(this).children('h3').hide()
+          $(this).children('h6').hide()
+          $(this).children('#hidden').show()
+          .css('div.new')
+        } else {
+          count += 1
+          console.log(count)
+          $(this).children('h3').show()
+          $(this).children('h6').show()
+          $(this).children('#hidden').hide()
+          .css('div.new')
+
+        }
+        console.log(count)
+        })
+
+
+          // console.log($(this).children('p').attr('display'))
+          // if ($(this).children('p').attr('display') == 'none') {
+          //   $('p.hide').attr('display', 'block')
+          // } else {
+          //   $('p.hide').css('div.new')
+          // }
+
+        })
+
+
+    </script>
+  </head>
+  <body>
+    <div class="main_content">
+      <div id="left_side">
+        <form>
+          <label for="first_name">First Name:</label>
+          <input class="first" type="text" name="firstname"></br>
+          <label for="last_name">Last Name:</label>
+          <input class="last" type="text" name="lastname"></br>
+          <label class="description">Description:</label>
+          <textarea></textarea>
+          <button type="button">Add User</button>
+      </div>
+      <div id="right_side">
+      </div>
+    </div>
+  </body>
+</html>
