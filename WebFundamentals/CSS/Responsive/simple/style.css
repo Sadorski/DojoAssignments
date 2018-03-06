@@ -1,0 +1,43 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
+h1 {
+  background-color:gray;
+  margin:10px;
+}
+p#info {
+  background-color: gray;
+  margin: 10px;
+}
+#footer p {
+  margin: 10px;
+  background-color:yellow;
+  padding: 10px
+}
+
+@media only screen and (max-width: 480px){
+  .desktop,
+  .tablet {
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 481px){
+  .desktop,
+  .phone {
+    display:none;
+  }
+
+}
+@media only screen and (min-width:1024px){
+  .tablet,
+  .phone {
+    display:none;
+  }
+  .desktop {
+    display:block;
+  }
+
+}
